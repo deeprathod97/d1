@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #1e1e2f;
+    color: #fff;
+}
+.container {
+    display: flex;
+    height: 100vh;
+}
+.sidebar {
+    width: 250px;
+    background-color: #252636;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.sidebar .logo {
+    display: flex;
+    align-items: center;
+}
+.sidebar .logo img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.sidebar .menu {
+    margin-top: 20px;
+}
+.sidebar .menu a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
+    text-decoration: none;
+    font-size: 18px;
+}
+.sidebar .menu a.active {
+    color: #ff4c60;
+}
+.sidebar .menu a:hover {
+    color: #ff4c60;
+}
+.sidebar .profile {
+    display: flex;
+    align-items: center;
+}
+.sidebar .profile img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+.main-content {
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .search {
+    display: flex;
+    align-items: center;
+}
+.header .search input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+.header .search button {
+    background-color: #ff4c60;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+}
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+.dashboard .card {
+    background-color: #2b2c3b;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
+    flex: 1;
+    min-width: 300px;
+}
+.dashboard .card h3 {
+    margin: 0;
+    font-size: 24px;
+}
+.dashboard .card p {
+    margin: 10px 0;
+    font-size: 18px;
+}
+.dashboard .card .chart {
+    height: 200px;
+    background-color: #1e1e2f;
+    border-radius: 10px;
+}
+.dashboard .card .balance {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.dashboard .card .balance .amount {
+    font-size: 24px;
+}
+.dashboard .card .balance .icon {
+    font-size: 24px;
+}
